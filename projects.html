@@ -5,12 +5,11 @@ header: Projects
 group: navigation
 ---
 {% include JB/setup %}
-<h2>ProjectsYEAH</h2>
 <ul class="media-list">
 {% for project in site.data.projects %}
   <li class="media">
     <a class="pull-left" href="{{ project.url }}">
-      <img class="media-object" data-src="{{ project.image }}">
+      <img class="media-object" width="64px" height="64px" src="{{ project.image }}">
     </a>
     <div class="media-body">
       <h4 class="media-heading">{{ project.name }}</h4>
