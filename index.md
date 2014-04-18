@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Edwin Rodríguez
+tagline: edwrodrig
 ---
 {% include JB/setup %}
 
