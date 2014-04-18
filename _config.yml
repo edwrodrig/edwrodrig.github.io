@@ -28,6 +28,9 @@ production_url : http://edwrodrig.github.io
 google_tracking_id : "UA-49580762-2"
 markdown: kramdown
 
+collections:
+  - projects
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
