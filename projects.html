@@ -7,8 +7,7 @@ group: navigation
 {% include JB/setup %}
 <h2>ProjectsYEAH</h2>
 <ul class="media-list">
-{% for project in site.projects %}
-<!--
+{% for project in site.data.projects %}
   <li class="media">
     <a class="pull-left" href="{{ project.url }}">
       <img class="media-object" data-src="{{ project.image }}">
@@ -18,7 +17,5 @@ group: navigation
       <p>{{ project.description }}</p>
     </div>
   </li>
- -->
-<h1>FHJDHJDF</h1>
 {% endfor %}
 </ul>
