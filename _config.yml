@@ -10,6 +10,7 @@ pygments: true
 #
 title : "edwrodrig"
 tagline: Site Tagline
+description: "I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information."
 author :
   name : Edwin Rodríguez
   email : edwrodrig@gmail.com

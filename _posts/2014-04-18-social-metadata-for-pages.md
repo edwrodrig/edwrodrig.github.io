@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "In this article is explained how to add social metadata for a html page. This metadata is used for showing nice description boxes in social networks when you share a link on them."
 category : lessons
 tags : [html, social, english]
 ---
