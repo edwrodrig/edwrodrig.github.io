@@ -25,6 +25,8 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://edwrodrig.github.io
+google_tracking_id : "UA-49580762-2"
+markdown: kramdown
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -74,18 +76,6 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
 
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : false
-      
-  analytics :
-    provider : google 
-    google : 
-        tracking_id : 'UA-49580762-2'
-
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
   # Set 'provider' to the sharing provider you want to use.
@@ -104,4 +94,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-markdown: kramdown
