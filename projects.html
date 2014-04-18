@@ -9,12 +9,12 @@ group: navigation
 <ul class="media-list">
 {% for project in site.projects %}
   <li class="media">
-    <a class="pull-left" href="{{ project.url }}">
-      <img class="media-object" data-src="{{ project.image }}">
+    <a class="pull-left" href="{{ project.content.url }}">
+      <img class="media-object" data-src="{{ project.content.image }}">
     </a>
     <div class="media-body">
-      <h4 class="media-heading">{{ project.name }}</h4>
-      <p>{{ project.description }}</p>
+      <h4 class="media-heading">{{ project.content.name }}</h4>
+      <p>{{ project.content.description }}</p>
     </div>
   </li>
 {% endfor %}
