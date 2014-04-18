@@ -29,7 +29,7 @@ google_tracking_id : "UA-49580762-2"
 markdown: kramdown
 
 collections:
-- projects
+  - projects
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
