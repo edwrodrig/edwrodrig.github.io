@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Edwin Rodríguez
-tagline: edwrodrig
+title: "Edwin Rodríguez"
+tagline: "Software Engineer"
 ---
 {% include JB/setup %}
 
