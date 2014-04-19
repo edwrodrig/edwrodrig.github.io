@@ -1,32 +1,53 @@
 {% include JB/setup %}
 <!DOCTYPE html>
+{% if page.title and page.title != '' %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = site.title %}
+{% endif %}
+
+{% if page.description and page.description != '' %}
+  {% assign description = page.description %}
+{% else %}
+  {% assign description = site.description %}
+{% endif %}
+
+{% if page.image and page.image != '' %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = site.image %}
+{% endif %}
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ title }}</title>
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Google data-->
-	<meta name="description" content="{{ page.description }}" />
-	<meta name="author" content="{{ page.description }}" />
+	<meta name="description" content="{{ description }}" />
+	<meta name="author" content="{{ sute.author.name }}" />
 
 	<!-- Google+ data -->
-	<meta itemprop="name" content="{{ page.title }}" />
-	<meta itemprop="description" content="{{ page.description }}" />
+	<meta itemprop="name" content="{{ .title }}" />
+	<meta itemprop="description" content="{{ description }}" />
+	<meta itemprop="image" content="{{ image }}">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="{{ page.title }}" />
-	<meta name="twitter:description" content="{{ page.description }}" />
+	<meta name="twitter:title" content="{{ title }}" />
+	<meta name="twitter:description" content="{{ description }}" />
 	<meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+	<meta name="twitter:image:src" content="{{ image }}">
 
 	<!-- Open Graph data -->
-	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:title" content="{{ title }}" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="{{ site.url }}" />
-	<meta property="og:description" content="{{ page.description }}" />
+	<meta property="og:url" content="{{ site.production_url }}" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="og:image" content="{{ image }}">
 
     <!-- Le styles -->
 	<!-- Latest compiled and minified CSS -->

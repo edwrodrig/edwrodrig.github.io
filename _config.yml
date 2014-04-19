@@ -8,9 +8,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : "edwrodrig"
+title : "Edwin Rodríguez"
 tagline: "Software engineer"
 description: "I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information."
+image: "http://edwrodrig.github.io/img/meta-img.jpg"
 author :
   name : Edwin Rodríguez
   email : edwrodrig@gmail.com
