@@ -30,24 +30,34 @@ tagline: "software engineer"
 	    <div class="panel panel-default">
           <div class="panel-heading">Posts</div>
           <div class="panel-body">
-		    {% assign posts_collate = site.posts %}
-            {% include JB/posts_collate %}
+		    <ul class="media-list">
+		    {% for post in site.posts offset: 0 limit: 5 %}
+		      <li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+			      <p>{{ post.description }}</p>
+			    </div>
+		      </li>
+			{% endfor %}
+			</ul>
           </div>
         </div>
 	    <div class="panel panel-default">
           <div class="panel-heading">Projects</div>
           <div class="panel-body">
-{% for project in site.data.projects %}
-		  <li class="media">
-			<a class="pull-left" href="{{ project.url }}">
-			  <img class="media-object" src="{{ project.image }}">
-			</a>
-			<div class="media-body">
-			  <h4 class="media-heading">{{ project.name }}</h4>
-			  <p>{{ project.description }}</p>
-			</div>
-		  </li>
-		{% endfor %}
+		    <ul class="media-list">
+            {% for project in site.data.projects offset: 0 limit: 1 %}
+		      <li class="media">
+			    <a class="pull-left" href="{{ project.url }}">
+			      <img class="media-object" src="{{ project.image }}">
+			    </a>
+			    <div class="media-body">
+			      <h4 class="media-heading">{{ project.name }}</h4>
+			      <p>{{ project.description }}</p>
+			    </div>
+		      </li>
+		    {% endfor %}
+		    </ul>
           </div>
         </div>
 	  </div>
