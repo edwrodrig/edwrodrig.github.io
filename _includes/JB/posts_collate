@@ -29,10 +29,16 @@ Usage:
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
       <h3>{{this_month}}</h3>
-      <ul>
+      <ul class="media-list">
     {% endif %}
-  
-    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li class="media">
+	  <div class="media-body">
+	    <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+	    <p>{{ post.date | date: "%B %e, %Y" }}</p>
+		<p>{{ post.description</p>
+	  </div>
+	</li>
+    <!-- li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li -->
   
     {% if forloop.last %}
       </ul>
@@ -41,12 +47,12 @@ Usage:
         </ul>
         <h2>{{next_year}}</h2>
         <h3>{{next_month}}</h3>
-        <ul>
+        <ul class="media-list">
       {% else %}    
         {% if this_month != next_month %}
           </ul>
           <h3>{{next_month}}</h3>
-          <ul>
+          <ul class="media-list">
         {% endif %}
       {% endif %}
     {% endif %}
