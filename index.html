@@ -35,11 +35,12 @@ tagline: "software engineer"
 		      <li class="media">
 			    <div class="media-body">
 			      <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
-			      <p>{{ post.description }}</p>
+			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
 			    </div>
 		      </li>
 			{% endfor %}
 			</ul>
+			<p><a class="btn btn-primary btn-lg" role="button" href="/archive.html">More posts</a></p>
           </div>
         </div>
 	    <div class="panel panel-default">
@@ -58,6 +59,7 @@ tagline: "software engineer"
 		      </li>
 		    {% endfor %}
 		    </ul>
+			<p><a class="btn btn-primary btn-lg" role="button" href="/projects.html">More projects</a></p>
           </div>
         </div>
 	  </div>
