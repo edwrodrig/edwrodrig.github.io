@@ -2,9 +2,11 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tags : [html, meta tags, social]
 ---
 {% include JB/setup %}
 
 
-This is an example of a draft. Read more here: [http://jekyllrb.com/docs/drafts/](http://jekyllrb.com/docs/drafts/)
+-[Facebook Open Graph](https://developers.facebook.com/tools/debug/)
+-[Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
+-[Google](http://www.google.com/webmasters/tools/richsnippets)
