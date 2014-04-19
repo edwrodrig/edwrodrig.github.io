@@ -12,10 +12,7 @@ tagline: "software engineer"
         <a href="#">
 	      <img class="media-object" width="100%" src="https://s.gravatar.com/avatar/d14cefa990b93b276681eb0fb727986f?s=200" alt="Myself">
         </a>
-		<hr>
 	    <h2 class="media-heading">{{ page.title }}</h2>
-		<h4>{{ page.tagline }}</h4>
-		<hr>
         <a class="social-big github" href="http://www.github.com/edwrodrig"></a>
         <a class="social-big facebook" href="http://www.facebook.com/edwrodrig"></a>
         <a class="social-big linkedin" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848"></a>
@@ -28,7 +25,23 @@ tagline: "software engineer"
         <a class="social-big youtube" href="https://www.youtube.com/user/edwrodrig"></a>
       </div>
       <div class="media-body">
-	    <p>Something</p>
+	    <h3>Posts</h3>
+		{% assign posts_collate = site.posts %}
+        {% include JB/posts_collate %}
+	    <h3>Projects</h3>
+		<ul class="media-list">
+		{% for project in site.data.projects %}
+		  <li class="media">
+			<a class="pull-left" href="{{ project.url }}">
+			  <img class="media-object" src="{{ project.image }}">
+			</a>
+			<div class="media-body">
+			  <h4 class="media-heading">{{ project.name }}</h4>
+			  <p>{{ project.description }}</p>
+			</div>
+		  </li>
+		{% endfor %}
+		</ul>
 	  </div>
 	</div>
   </div>
