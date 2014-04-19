@@ -84,8 +84,8 @@ a.social {
 a.social-big {
   background-size: 100%;
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 a.facebook {
@@ -99,6 +99,15 @@ a.twitter {
 a.google-plus {
   background-image: url(../img/icons/google-plus.png);
 }
+
+a.google-play {
+  background-image: url(../img/icons/google-play.png);
+}
+
+a.bitbucket {
+  background-image: url(../img/icons/bitbucket.png);
+}
+
 
 a.linkedin {
   background-image: url(../img/icons/linkedin.png);
