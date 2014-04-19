@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags : [html, meta tag, social, english]
+tags : [html, social, english]
 ---
 {% include JB/setup %}
 
@@ -12,8 +12,6 @@ Paste the following code in the html head section. You may replace the contents 
 
 ~~~~~~ html
 <html itemscope itemtype="http://schema.org/WebApplication">
-
-<meta name="description" content="Page description." />
 
 <!-- Google data-->
 <meta name="description" content="Page description." />
@@ -45,6 +43,7 @@ Paste the following code in the html head section. You may replace the contents 
 
 <meta property="og:description" content="Page description." />
 ~~~~~~
+
 ##Validation tools
 There are links to validation tools for the main social meta tags.
 
