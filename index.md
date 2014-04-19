@@ -1,15 +1,10 @@
 ---
 layout: page
 title: "Edwin Rodríguez"
-tagline: "Software Engineer"
+tagline: "software engineer"
 ---
 {% include JB/setup %}
 
-## Currently working on
-
-  - [This page](http://edwrodrig.github.io/)
-  - [Far Flight](http://edwrodrig.github.io/farflight)
-    
-
+<img src="https://s.gravatar.com/avatar/d14cefa990b93b276681eb0fb727986f?s=80" />
 
 
