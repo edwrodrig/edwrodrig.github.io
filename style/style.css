@@ -81,6 +81,13 @@ a.social {
   width: 20px;
 }
 
+a.social-big {
+  background-size: 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
 a.facebook {
   background-image: url(../img/icons/facebook.png);
 }
@@ -91,6 +98,34 @@ a.twitter {
 
 a.google-plus {
   background-image: url(../img/icons/google-plus.png);
+}
+
+a.linkedin {
+  background-image: url(../img/icons/linkedin.png);
+}
+
+a.github {
+  background-image: url(../img/icons/github.png);
+}
+
+a.deviantart{
+  background-image: url(../img/icons/deviantart.png);
+}
+
+a.youtube{
+  background-image: url(../img/icons/youtube.png);
+}
+
+a.skype{
+  background-image: url(../img/icons/skype.png);
+}
+
+a.paypal{
+  background-image: url(../img/icons/paypal.png);
+}
+
+a.codepen{
+  background-image: url(../img/icons/codepen.png);
 }
 
 .one-third {
