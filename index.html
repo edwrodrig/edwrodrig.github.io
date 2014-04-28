@@ -6,68 +6,66 @@ description: ""
 ---
 {% include JB/setup %}
 
-<div class="row-fluid">
-  <div class="span12">
-    <div class="media">
-	  <div class="pull-left one-forth">
-        <a href="#">
-	      <img class="media-object" width="100%" src="https://s.gravatar.com/avatar/d14cefa990b93b276681eb0fb727986f?s=200" alt="Myself">
-        </a>
-		<hr>
-	    <h3 class="media-heading">{{ page.title }}</h3>
-		<hr>
-        <a class="social-big github" href="http://www.github.com/edwrodrig"></a>
-        <a class="social-big facebook" href="http://www.facebook.com/edwrodrig"></a>
-        <a class="social-big linkedin" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848"></a>
-        <a class="social-big google-plus" href="https://plus.google.com/103811308960271051593"></a>
-		<a class="social-big google-play" href="http://play.google.com/store/apps/developer?id=edwrodrig"></a>
-		<a class="social-big bitbucket" href="http://www.bitbucket.org/edwrodrig"></a>
-        <a class="social-big deviantart" href="http://edwrodrig.deviantart.com/"></a>
-        <a class="social-big twitter" href="https://twitter.com/edwrodrig"></a>
-        <a class="social-big codepen" href="http://www.codepen.io/edwrodrig"></a>
-        <a class="social-big youtube" href="https://www.youtube.com/user/edwrodrig"></a>
-      </div>
-      <div class="media-body">
-	    <div class="alert alert-success">
-          <strong>Far Flight!</strong> Play it <a href="http://edwrodrig.github.io/farflight" class="alert-link">here</a>.
-        </div>
-	    <div class="panel panel-default">
-          <div class="panel-heading">Posts</div>
-          <div class="panel-body">
-		    <ul class="media-list">
-		    {% for post in site.posts offset: 0 limit: 5 %}
-		      <li class="media">
-			    <div class="media-body">
-			      <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
-			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
-			    </div>
-		      </li>
-			{% endfor %}
-			</ul>
-			<p><a class="btn btn-primary btn-sm" role="button" href="/archive.html">More posts</a></p>
-          </div>
-        </div>
-	    <div class="panel panel-default">
-          <div class="panel-heading">Projects</div>
-          <div class="panel-body">
-		    <ul class="media-list">
-            {% for project in site.data.projects offset: 0 limit: 2 %}
-		      <li class="media">
-			    <a class="pull-left" href="{{ project.url }}">
-			      <img class="media-object" src="{{ project.image }}">
-			    </a>
-			    <div class="media-body">
-			      <h4 class="media-heading">{{ project.name }}</h4>
-			      <p>{{ project.description }}</p>
-			    </div>
-		      </li>
-		    {% endfor %}
-		    </ul>
-			<p><a class="btn btn-primary btn-sm" role="button" href="/projects.html">More projects</a></p>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#">
+      <img class="media-object" width="100%" src="https://s.gravatar.com/avatar/d14cefa990b93b276681eb0fb727986f?s=200" alt="Myself">
+    </a>
+    <hr>
+    <h3>{{ page.title }}</h3>
+    <hr>
+    <div class="social-buttons">
+      <a class="social-big github" href="http://www.github.com/edwrodrig"></a>
+      <a class="social-big facebook" href="http://www.facebook.com/edwrodrig"></a>
+      <a class="social-big linkedin" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848"></a>
+      <a class="social-big google-plus" href="https://plus.google.com/103811308960271051593"></a>
+      <a class="social-big google-play" href="http://play.google.com/store/apps/developer?id=edwrodrig"></a>
+      <a class="social-big bitbucket" href="http://www.bitbucket.org/edwrodrig"></a>
+      <a class="social-big deviantart" href="http://edwrodrig.deviantart.com/"></a>
+      <a class="social-big twitter" href="https://twitter.com/edwrodrig"></a>
+      <a class="social-big codepen" href="http://www.codepen.io/edwrodrig"></a>
+      <a class="social-big youtube" href="https://www.youtube.com/user/edwrodrig"></a>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="alert alert-success">
+      <strong>Far Flight!</strong> Play it <a href="http://edwrodrig.github.io/farflight" class="alert-link">here</a>.
+    </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">Posts</div>
+    <div class="panel-body">
+      <ul class="media-list">
+      {% for post in site.posts offset: 0 limit: 5 %}
+        <li class="media">
+	  <div class="media-body">
+	    <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+	    <p>{{ post.date | date: "%B %e, %Y" }}</p>
 	  </div>
-	</div>
+        </li>
+      {% endfor %}
+      </ul>
+      <p><a class="btn btn-primary btn-sm" role="button" href="/archive.html">More posts</a></p>
+    </div>
+    </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">Projects</div>
+      <div class="panel-body">
+        <ul class="media-list">
+        {% for project in site.data.projects offset: 0 limit: 2 %}
+	  <li class="media">
+	    <a class="pull-left" href="{{ project.url }}">
+	      <img class="media-object" src="{{ project.image }}">
+	    </a>
+	    <div class="media-body">
+	     <h4 class="media-heading">{{ project.name }}</h4>
+	     <p>{{ project.description }}</p>
+	    </div>
+	  </li>
+        {% endfor %}
+	</ul>
+	<p><a class="btn btn-primary btn-sm" role="button" href="/projects.html">More projects</a></p>
+      </div>
+    </div>
   </div>
 </div>
 
