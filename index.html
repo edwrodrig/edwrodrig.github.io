@@ -33,17 +33,13 @@ description: ""
         </div>
 	    <div class="panel panel-default">
           <div class="panel-heading">Posts</div>
-          <div class="panel-body">
-		    <ul class="media-list">
+          <div class="list-group">
 		    {% for post in site.posts offset: 0 limit: 5 %}
-		      <li class="media">
-			    <div class="media-body">
-			      <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
-			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
-			    </div>
-		      </li>
+			<div class="list-group-item">
+			  <h4 class="list-group-item-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+			  <p class="list-group-item-text">{{ post.date | date: "%B %e, %Y" }}</p>
+			</div>
 			{% endfor %}
-			</ul>
 			<p><a class="btn btn-primary btn-sm" role="button" href="/archive.html">More posts</a></p>
           </div>
         </div>

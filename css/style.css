@@ -6,9 +6,6 @@
 .container-narrow > hr {
   margin: 30px 0; }
 
-.navbar .nav {
-  float: right; }
-
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -63,16 +60,7 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
-  
-.left-block {
-  display: block;
-  float: left;  
-  margin: 0;
-}
 
-#share {
-  text-align: right;
-}
 
 a.social {
   background-size: 100%;
@@ -134,16 +122,4 @@ a.paypal{
 
 a.codepen{
   background-image: url(../img/icons/codepen.png);
-}
-
-.one-third {
-  width: 33.3332%;
-}
-
-.one-forth {
-  width: 25%;
-}
-
-.two-thirds {
-  width: 66.6665%;
 }
