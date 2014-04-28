@@ -72,7 +72,7 @@
 
   <body>
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#page-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -92,13 +92,11 @@
       </div>
     </nav>
 
-    <div class="container-narrow">
-
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer>
+    <div class="container" role="main">
+      {{ content }}
+    </div>
+    <hr>
+    <footer>
 	    <div class="left-block two-thirds">
           <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
 		</div>
