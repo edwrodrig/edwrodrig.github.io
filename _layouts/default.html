@@ -91,17 +91,15 @@
         </div>
       </div>
     </nav>
-
     <div class="container" role="main">
       {{ content }}
     </div>
-    <hr>
-    <footer>
-	    <div class="left-block two-thirds">
-          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
-		</div>
-		<div id="share" class="left-block one-third">
-		  <p>Share on
+    <div class="container">
+      <div class=".col-md-8">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+      </div>
+      <div class=".col-md-4">
+        <p>Share on
 		    <!-- Facebook like button -->
 		    <a class="social facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url | UrlEncode }}"
 			  onclick="window.open(this.href, 'name', 'location=no,status=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
@@ -111,9 +109,8 @@
 		    <!-- Google Plus button -->
 		    <a class="social google-plus" title="Share on Google Plus" href="https://plus.google.com/share?url={{ site.production_url | UrlEncode }}"
 			  onclick="javascript:window.open(this.href, '', 'location=no,status=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
-		  </p>
-		</div>
-      </footer>
+	</p>
+      </div>
     </div>
     {% include analytics.html %}
   </body>
