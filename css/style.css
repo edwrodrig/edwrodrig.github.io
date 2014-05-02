@@ -68,10 +68,6 @@ a.social-big {
   width: 30px;
 }
 
-.s4fbshare {
-margin-top: -4px;
-}
-
 a.facebook {
   background-image: url(../img/icons/facebook.png);
 }
@@ -121,9 +117,9 @@ a.codepen{
 }
 
 a.tumblr{
-  background-image: url(../img/icons/tumblr.png);
+  background-image: url(../img/icons/tumblr.jpg);
 }
 
 a.pinterest{
-  background-image: url(../img/icons/pinterest.png);
+  background-image: url(../img/icons/pinterest.jpg);
 }
