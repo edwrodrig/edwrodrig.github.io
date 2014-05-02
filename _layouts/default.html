@@ -28,11 +28,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ base_path }}"><strong>{{ title }}</strong></a>
+          <a class="navbar-brand" href="{{ base_path }}"><strong>{{ site.title }}</strong></a>
         </div>
         <div class="collapse navbar-collapse" id="page-navbar-collapse">
-          {% if tagline %}
-          <p class="navbar-text">{{ tagline }}</p>
+          {% if site.tagline %}
+          <p class="navbar-text">{{ site.tagline }}</p>
           {% endif %}
           <ul class="nav navbar-nav navbar-right">
             {% assign pages_list = site.pages %}

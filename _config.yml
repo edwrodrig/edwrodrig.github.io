@@ -4,6 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
+debug: debug
 
 title : "Edwin Rodríguez"
 tagline: "Software engineer"
@@ -13,12 +14,13 @@ image: "/img/meta-img.jpg"
 author :
   name : "Edwin Rodríguez"
   email : "edwrodrig@gmail.com"
+  page: "http://edwrodrig.github.io"
   services:
     facebook: edwrodrig
     youtube: edwrodrig
     twitter: edwrodrig
 
-production_url : http://edwrodrig.github.io
+production_url : http://edwrodrig.github.io/mmmm
 google_tracking_id : "UA-49580762-2"
 
 type:
@@ -31,5 +33,6 @@ sharing:
   - "facebook"
   - "twitter"
   - "google-plus"
+  - "pinterest"
 
 markdown: kramdown

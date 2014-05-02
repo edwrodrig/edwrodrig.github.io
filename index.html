@@ -4,8 +4,6 @@ title: "Edwin Rodríguez"
 tagline: "software engineer"
 description: ""
 ---
-{% include JB/setup %}
-
 <div class="row">
   <div class="col-md-8">
     <div class="alert alert-success">
@@ -18,13 +16,13 @@ description: ""
 		    {% for post in site.posts offset: 0 limit: 5 %}
 		      <li class="media">
 			    <div class="media-body">
-			      <h4 class="media-heading"><a href="{{ production_url }}{{ post.url }}">{{ post.title }}</a></h4>
+			      <h4 class="media-heading"><a href="{{ base_url }}{{ post.url }}">{{ post.title }}</a></h4>
 			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
 			    </div>
 		      </li>
 			{% endfor %}
 			</ul>
-			<p><a class="btn btn-primary btn-sm" role="button" href="/archive.html">More posts</a></p>
+			<p><a class="btn btn-primary btn-sm" role="button" href="{{ base_url }}/archive.html">More posts</a></p>
           </div>
         </div>
     <div class="panel panel-default">
@@ -43,7 +41,7 @@ description: ""
 	  </li>
         {% endfor %}
 	</ul>
-	<p><a class="btn btn-primary btn-sm" role="button" href="/projects.html">More projects</a></p>
+	<p><a class="btn btn-primary btn-sm" role="button" href="{{ base_url }}/projects.html">More projects</a></p>
       </div>
     </div>
   </div>

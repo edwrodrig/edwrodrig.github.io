@@ -1,4 +1,8 @@
-base_path = site.production_url
+{% if site.debug %}
+  {% assign base_path = '' %} 
+{% else %}
+  {% assign base_path = site.production_url %}
+{% endif %}
 
 {% if page.title and page.title != '' %}
   {% assign title = page.title %}

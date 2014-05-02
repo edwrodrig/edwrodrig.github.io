@@ -68,6 +68,10 @@ a.social-big {
   width: 30px;
 }
 
+.s4fbshare {
+margin-top: -4px;
+}
+
 a.facebook {
   background-image: url(../img/icons/facebook.png);
 }
