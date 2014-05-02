@@ -1,0 +1,23 @@
+{% unless site.sharing == empty %}
+<p class="text-right">Share on
+  {% if site.sharing contains "facebook" %}
+  <!-- Facebook button -->
+  <a class="social facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ base_path | UrlEncode }}"
+	  onclick="window.open(this.href, 'name', 'location=no,status=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>	    <!-- Twitter share button -->
+	{% endif %}
+  {% if site.sharing contains "twitter" %}
+  <!-- Twitter button -->
+	<a class="social twitter" title="Share on Twitter" href="https://twitter.com/share?url={{ base_path | UrlEncode }}"
+    onclick="javascript:window.open(this.href, '', 'location=no,status=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
+  {% endif %}
+  {% if site.sharing contains "google-plus" %}
+  <!-- Google Plus button -->
+	<a class="social google-plus" title="Share on Google Plus" href="https://plus.google.com/share?url={{ base_path | UrlEncode }}"
+	  onclick="javascript:window.open(this.href, '', 'location=no,status=no,menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
+  {% endif %}
+  {% if site.type.name == "github_project" and site.sharing contains "github" %}
+  <!-- Github link -->
+  <a class="social github" title="Fork on Github" href="https://github.com/{ site.type.github_project.user }/{ site.type.github_project.project}"></a>
+  {% endif %}
+</p>
+{% endunless %}

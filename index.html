@@ -18,7 +18,7 @@ description: ""
 		    {% for post in site.posts offset: 0 limit: 5 %}
 		      <li class="media">
 			    <div class="media-body">
-			      <h4 class="media-heading"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+			      <h4 class="media-heading"><a href="{{ production_url }}{{ post.url }}">{{ post.title }}</a></h4>
 			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
 			    </div>
 		      </li>
@@ -66,6 +66,8 @@ description: ""
            <a class="social-big bitbucket" href="http://www.bitbucket.org/edwrodrig"></a>
            <a class="social-big deviantart" href="http://edwrodrig.deviantart.com/"></a>
            <a class="social-big twitter" href="https://twitter.com/edwrodrig"></a>
+		   <a class="social-big tumblr" href="http://edwrodrig.tumblr.com/"></a>
+           <a class="social-big pinterest" href="http://www.pinterest.com/edwrodrig"></a>
            <a class="social-big codepen" href="http://www.codepen.io/edwrodrig"></a>
            <a class="social-big youtube" href="https://www.youtube.com/user/edwrodrig1"></a>
          </li>

@@ -1,0 +1,11 @@
+<div class="container">
+  {% unless page.layout == "fullscreen_canvas" %}
+  <hr/>
+  {% endunless %}
+  <div class="col-xs-8">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}{% if site.type == "github_project" %} under the <a title="See full text" href="https://github.com/{% site.type.github_project.user %}/{% site.type.github_project.name%}/blob/master/LICENSE">MIT License</a>{% endif %}</p>
+  </div>
+  <div class="col-xs-4">
+    {% include sharing %}
+  </div>
+</div>
