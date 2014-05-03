@@ -1,5 +1,5 @@
-<div id="footer" class="{{ container_class }}">
-  {% unless page.layout == "fullscreen_canvas" %}
+<div id="footer" class="{{ container_class }}{% if page.style == "fullscreen-header-footer" %} footer-fullscreen-header-footer{% endif %}">
+  {% unless page.style == "fullscreen-header-footer" %}
   <hr/>
   {% endunless %}
   <div class="col-xs-8">
