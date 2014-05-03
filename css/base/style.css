@@ -62,14 +62,6 @@
   padding-top: 15px;
 }
 
-#viewport {
-  display: block;
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-
 a.social {
   background-size: 100%;
   display: inline-block;
