@@ -53,6 +53,22 @@
   border: 1px solid #4c964d;
   color: #FFF; }
 
+.navbar-fullscreen-header-footer {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.footer-fullscreen-header-footer {
+  padding-top: 15px;
+}
+
+#viewport {
+  display: block;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
 
 a.social {
   background-size: 100%;
@@ -69,57 +85,57 @@ a.social-big {
 }
 
 a.facebook {
-  background-image: url(../img/icons/facebook.png);
+  background-image: url(../../img/icons/facebook.png);
 }
 
 a.twitter {
-  background-image: url(../img/icons/twitter.png);
+  background-image: url(../../img/icons/twitter.png);
 }
 
 a.google-plus {
-  background-image: url(../img/icons/google-plus.png);
+  background-image: url(../../img/icons/google-plus.png);
 }
 
 a.google-play {
-  background-image: url(../img/icons/google-play.png);
+  background-image: url(../../img/icons/google-play.png);
 }
 
 a.bitbucket {
-  background-image: url(../img/icons/bitbucket.png);
+  background-image: url(../../img/icons/bitbucket.png);
 }
 
 a.linkedin {
-  background-image: url(../img/icons/linkedin.png);
+  background-image: url(../../img/icons/linkedin.png);
 }
 
 a.github {
-  background-image: url(../img/icons/github.png);
+  background-image: url(../../img/icons/github.png);
 }
 
 a.deviantart{
-  background-image: url(../img/icons/deviantart.png);
+  background-image: url(../../img/icons/deviantart.png);
 }
 
 a.youtube{
-  background-image: url(../img/icons/youtube.png);
+  background-image: url(../../img/icons/youtube.png);
 }
 
 a.skype{
-  background-image: url(../img/icons/skype.png);
+  background-image: url(../../img/icons/skype.png);
 }
 
 a.paypal{
-  background-image: url(../img/icons/paypal.png);
+  background-image: url(../../img/icons/paypal.png);
 }
 
 a.codepen{
-  background-image: url(../img/icons/codepen.png);
+  background-image: url(../../img/icons/codepen.png);
 }
 
 a.tumblr{
-  background-image: url(../img/icons/tumblr.jpg);
+  background-image: url(../../img/icons/tumblr.jpg);
 }
 
 a.pinterest{
-  background-image: url(../img/icons/pinterest.jpg);
+  background-image: url(../../img/icons/pinterest.jpg);
 }

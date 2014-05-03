@@ -28,7 +28,7 @@
   {% assign image = site.image %}
 {% endif %}
 
-{% if page.layout != "fullscreen_canvas" %}
+{% if page.style != "fullscreen-header-footer" %}
   {% assign container_class = 'container' %}
 {% else %}
   {% assign container_class = 'container-fluid' %}
