@@ -1,4 +1,4 @@
-<div class="container">
+<div id="footer" class="{{ container_class }}">
   {% unless page.layout == "fullscreen_canvas" %}
   <hr/>
   {% endunless %}

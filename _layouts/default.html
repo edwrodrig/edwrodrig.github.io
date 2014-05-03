@@ -15,7 +15,7 @@
 </head>
 <body>
   {% include navbar %}
-  <div class="container" role="main">
+  <div class="{{ container_class }}" role="main">
     {{ content }}
   </div>
   {% include base/footer %}
