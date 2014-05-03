@@ -2,7 +2,6 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: ["README.md"]
 pygments: true
-debug: debug
 
 title : "Edwin Rodríguez"
 tagline: "Software engineer"
@@ -20,7 +19,7 @@ production_url : http://edwrodrig.github.io
 google_tracking_id : "UA-49580762-2"
 
 type:
-  name: "github_project"
+  name: "normal"
   github_project:
     user: "edwrodrig"
     name: "edwrodrig.github.io"
