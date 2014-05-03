@@ -24,15 +24,18 @@ production_url : http://edwrodrig.github.io/mmmm
 google_tracking_id : "UA-49580762-2"
 
 type:
-  name: "normal"
+  name: "github_project"
   github_project:
-    user: ""
-    name: ""
+    user: "edwrodrig"
+    name: "edwrodrig.github.io"
 
 sharing:
-  - "facebook"
-  - "twitter"
-  - "google-plus"
-  - "pinterest"
+  style: "native"
+  services:
+    - "facebook"
+    - "twitter"
+    - "google-plus"
+    - "pinterest"
+    - "github"
 
 markdown: kramdown
