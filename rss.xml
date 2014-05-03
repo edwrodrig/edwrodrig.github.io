@@ -2,13 +2,13 @@
 layout: nil
 title : RSS Feed
 ---
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
+{% include base/setup %}
 <channel>
   <title>{{ site.title }}</title>
   <description>{{ site.title }} - {{ site.author.name }}</description>
-  <link>{{ site.production_url }}{{ site.rss_path }}</link>
+  <link>{{ site.production_url }}/rss.xml</link>
   <link>{{ site.production_url }}</link>
   <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
   <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
@@ -17,8 +17,8 @@ title : RSS Feed
   <item>
     <title>{{ post.title }}</title>
     <description>{{ post.content | xml_escape }}</description>
-    <link>{{ site.production_url }}{{ post.url }}</link>
-    <guid>{{ site.production_url }}{{ post.id }}</guid>
+    <link>{{ base_path }}{{ post.url }}</link>
+    <guid>{{ base_path }}{{ post.id }}</guid>
     <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
   </item>
   {% endfor %}

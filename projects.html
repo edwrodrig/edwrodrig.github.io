@@ -5,17 +5,17 @@ header: Projects
 description: "My projects that I'm currently working and I have worked."
 group: navigation
 ---
-{% include JB/setup %}
+{% include base/setup %}
 <ul class="media-list">
 {% for project in site.data.projects %}
-  <li class="media">
-    <a class="pull-left" href="{{ project.url }}">
-      <img class="media-object" src="{{ project.image }}">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">{{ project.name }}</h4>
-      <p>{{ project.description }}</p>
-    </div>
-  </li>
+<li class="media">
+  <a class="pull-left" href="{{ project.url }}">
+    <img class="media-object" src="{{ project.image }}">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">{{ project.name }}</h4>
+    <p>{{ project.description }}</p>
+  </div>
+</li>
 {% endfor %}
 </ul>

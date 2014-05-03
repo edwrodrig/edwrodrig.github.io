@@ -1,8 +1,6 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: ["README.md"]
 pygments: true
 debug: debug
 
@@ -16,11 +14,9 @@ author :
   email : "edwrodrig@gmail.com"
   page: "http://edwrodrig.github.io"
   services:
-    facebook: edwrodrig
-    youtube: edwrodrig
     twitter: edwrodrig
 
-production_url : http://edwrodrig.github.io/mmmm
+production_url : http://edwrodrig.github.io
 google_tracking_id : "UA-49580762-2"
 
 type:
@@ -30,12 +26,11 @@ type:
     name: "edwrodrig.github.io"
 
 sharing:
-  style: "native"
+  style: "square"
   services:
     - "facebook"
     - "twitter"
     - "google-plus"
     - "pinterest"
-    - "github"
 
 markdown: kramdown
