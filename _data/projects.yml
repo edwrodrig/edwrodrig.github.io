@@ -1,3 +1,8 @@
+- name: "pitri.js"
+  description: "pitri.js is a small javascript library for projecting points with perspective. It isn't dependant of any framework so you can use it in anything. pitri.js provides you functions to define a camera view and to transform a 3d point to viewport coordinates."
+  image: "http://edwrodrig.github.io/img/projects/pitri.js.png"
+  url: "http://edwrodrig.github.io/pitri.js"
+
 - name: "Polyshape"
   description: "Polyshape is a simple html5 pure canvas 2d projection and rotation demo. You can rotate a shape or see it around in a first person perspective."
   image: "http://edwrodrig.github.io/img/projects/polyshape.png"
