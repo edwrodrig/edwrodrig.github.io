@@ -11,7 +11,7 @@ In this article is explained how to add social metadata for a html page. This me
 ##Code
 Paste the following code in the html head section. You may replace the contents like author data and page descriptions by your own ones.
 
-{% gist 39b3fda59d94aececb73 %}
+{% gist 39b3fda59d94aececb73 meta.html %}
 ~~~~~~ html
 <html itemscope itemtype="http://schema.org/WebApplication">
 
