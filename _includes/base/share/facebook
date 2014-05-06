@@ -4,7 +4,7 @@
     width: 80px; 
 }
 .fb-share-button span, 
-.fb-share-button iframe {.
+.fb-share-button iframe {
     width: 80px! important;
     height: 25px! important;
 }
@@ -18,9 +18,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <style>
+/*
 .fb_iframe_widget span {
 vertical-align:baseline !important;
 }
+*/
 </style>
 <div class="fb-share-button" data-href="{{ base_path }}{{ page.url }}" data-type="button"></div>
 {% else %}
