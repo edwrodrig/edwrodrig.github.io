@@ -19,13 +19,13 @@ production_url : http://edwrodrig.github.io
 google_tracking_id : "UA-49580762-2"
 
 type:
-  name: "native"
+  name: "normal"
   github_project:
     user: "edwrodrig"
     name: "edwrodrig.github.io"
 
 sharing:
-  style: "square"
+  style: "native"
   services:
     - "facebook"
     - "twitter"
