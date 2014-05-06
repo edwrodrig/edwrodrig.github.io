@@ -6,7 +6,7 @@
 .fb-share-button span, 
 .fb-share-button iframe {
     width: 80px! important;
-    height: 25px! important;
+    height: 20px! important;
 }
 </style>
 <div id="fb-root"></div>
