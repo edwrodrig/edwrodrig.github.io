@@ -1,10 +1,10 @@
 {% if site.sharing.style == "native"%}
 <style>
-.fb_share_button { 
+.fb-share-button { 
     width: 80px; 
 }
-.fb_share_button span, 
-.fb_share_button iframe {.
+.fb-share-button span, 
+.fb-share-button iframe {.
     width: 80px! important;
     height: 25px! important;
 }
