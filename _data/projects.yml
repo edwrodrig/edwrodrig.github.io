@@ -1,3 +1,8 @@
+- name: "Ougijaaken"
+  description: "[Spanish] Ougijaaken es un comic fuertemente influenciado por Dragon Ball hecho en mi niñez. El único propósito de publicar esta historia es compartirla ya que es preferible eso antes que permanezca guardada por siempre en mis carpetas. ¡Espero que disfruten!"
+  image: "http://edwrodrig.github.io/img/projects/ougijaaken.jpg"
+  url: "http://edwrodrig.github.io/ougijaaken"
+
 - name: "pitri.js"
   description: "pitri.js is a small javascript library for projecting points with perspective. It isn't dependant of any framework so you can use it in anything. pitri.js provides you functions to define a camera view and to transform a 3d point to viewport coordinates."
   image: "http://edwrodrig.github.io/img/projects/pitri.js.png"
