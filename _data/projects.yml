@@ -1,3 +1,8 @@
+- name: "Hanoi"
+  description: "Hanoi is a simple Html5 pure canvas Towers of Hanoi game demo. Towers of Hanoi is a puzzle game invented by French mathematician Edouard Lucas in 1883. We are given a tower of eight disks, initially stacked in decreasing size on ome of three pegs: The objective is to transfer the entire tower to one of the other pegs, moving only one disk at a time and never moving a larger one onto a smaller"
+  image: "http://edwrodrig.github.io/img/projects/hanoi.png"
+  url: "http://edwrodrig.github.io/hanoi"
+
 - name: "Ougijaaken"
   description: "[Spanish] Ougijaaken es un comic fuertemente influenciado por Dragon Ball hecho en mi niñez. El único propósito de publicar esta historia es compartirla ya que es preferible eso antes que permanezca guardada por siempre en mis carpetas. ¡Espero que disfruten!"
   image: "http://edwrodrig.github.io/img/projects/ougijaaken.jpg"
