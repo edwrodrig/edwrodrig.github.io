@@ -12,7 +12,7 @@ I found problems to organize my Qt unit test in multiple classes. Some macros li
 
 There is the magic:
 
-<script src="https://gist.github.com/edwrodrig/5c84af39bc151f4cd815.js?file=_qt_test_main_lambda.cpp"></script>
+<script src="https://gist.github.com/edwrodrig/5c84af39bc151f4cd815.js?file=%20qt_test_main_lambda.cpp"></script>
 
 ##Alternative solutions
 
