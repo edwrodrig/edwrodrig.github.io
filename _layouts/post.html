@@ -6,9 +6,6 @@ layout: page
 </div>
 <div class="content">
   {{ content }}
-<div class="text-center">
-	<div class="fb-comments" data-href="http://edwrodrig.github.io/{{ page.url }}" data-numposts="5" data-colorscheme="light"></div>
-</div
 </div>
 
 {% unless page.categories == empty %}
@@ -28,6 +25,7 @@ layout: page
 {% endunless %}  
 
 <hr>
+<div class="text-center">
 <ul class="pagination">
   {% if page.previous %}
     <li class="prev"><a href="{{ base_path }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
@@ -41,4 +39,9 @@ layout: page
     <li class="next disabled"><a>Next &rarr;</a>
   {% endif %}
 </ul>
+</div>
+<hr>
+<div class="text-center">
+        <div class="fb-comments" data-href="http://edwrodrig.github.io/{{ page.url }}" data-numposts="5" data-colorscheme="light"></div>
+</div>
 
