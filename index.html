@@ -26,10 +26,11 @@ tagline: "Software engineer"
           </div>
         </div>
     <div class="panel panel-default">
-      <div class="panel-heading">Projects</div>
+      <div class="panel-heading">Featured projects</div>
       <div class="panel-body">
         <ul class="media-list">
-        {% for project in site.data.projects offset: 0 limit: 2 %}
+        {% for project in site.data.projects %}
+        {% if project.name == 'Far Flight' or project.name == 'Tundra Piechart' }
 	  <li class="media">
 	    <a class="pull-left" href="{{ project.url }}">
 	      <img class="media-object" src="{{ project.image }}">
@@ -39,6 +40,7 @@ tagline: "Software engineer"
 	     <p>{{ project.description }}</p>
 	    </div>
 	  </li>
+        {% endif %}
         {% endfor %}
 	</ul>
 	<p><a class="btn btn-primary btn-sm" role="button" href="{{ base_path }}/projects.html">More projects</a></p>

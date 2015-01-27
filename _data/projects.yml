@@ -1,3 +1,13 @@
+- name: "Canal-web"
+  description: "Canal is a web based cellular automata analysis tool. You can set your initial state and run any of the ECA rules on it. There are more options that extends the possibilities of analysis and simulations."
+  image: "http://edwrodrig.github.io/img/projects/canal-web.gif"
+  url: "http://edwrodrig.github.io/canal-web"
+
+- name: "Far Flight"
+  description: "Far Flight is a simple html5 canvas game. Your objective is to fly as far as you can without crashing the blocks in the way. The speed increases through time making the game harder everytime."
+  image: "http://edwrodrig.github.io/img/projects/far-flight.png"
+  url: "http://edwrodrig.github.io/farflight"
+
 - name: "Hanoi"
   description: "Hanoi is a simple Html5 pure canvas Towers of Hanoi game demo. Towers of Hanoi is a puzzle game invented by French mathematician Edouard Lucas in 1883. We are given a tower of eight disks, initially stacked in decreasing size on ome of three pegs: The objective is to transfer the entire tower to one of the other pegs, moving only one disk at a time and never moving a larger one onto a smaller"
   image: "http://edwrodrig.github.io/img/projects/hanoi.png"
@@ -18,12 +28,7 @@
   image: "http://edwrodrig.github.io/img/projects/polyshape.png"
   url: "http://edwrodrig.github.io/polyshape"
 
-- name: "Canal-web"
-  description: "Canal is a web based cellular automata analysis tool. You can set your initial state and run any of the ECA rules on it. There are more options that extends the possibilities of analysis and simulations."
-  image: "http://edwrodrig.github.io/img/projects/canal-web.gif"
-  url: "http://edwrodrig.github.io/canal-web"
-
-- name: "Far Flight"
-  description: "Far Flight is a simple html5 canvas game. Your objective is to fly as far as you can without crashing the blocks in the way. The speed increases through time making the game harder everytime."
-  image: "http://edwrodrig.github.io/img/projects/far-flight.png"
-  url: "http://edwrodrig.github.io/farflight"
+- name: "Tundra Piechart"
+  description: "Tundra is a piechart viewer and editor software for bioinformatics. You can import data from several sources including MGTaxa, QIIME, Krona and plain text. Edition is very interactive with high degree of freedom. You can export your piechart to PNG and SVG image formats."
+  image: "http://inf.imo-chile.cl/en/img/software/tundra-piechart.png"
+  url: "http://inf.imo-chile.cl/en/software/tundra.html"
