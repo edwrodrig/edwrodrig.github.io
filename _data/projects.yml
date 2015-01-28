@@ -3,6 +3,11 @@
   image: "http://edwrodrig.github.io/img/projects/canal-web.gif"
   url: "http://edwrodrig.github.io/canal-web"
 
+- name: "ERoulette"
+  description: "If you have problems taking decisions ERoulette is the solution. ERoulette is a customizable roulette desktop application that helps you to choose a random alternative. Make your own options image, assign probabilities and spin it!. As a demostration, ERoulette application is preconfigured as a day activity roulette to choose what thing to do someday."
+  image: "http://edwrodrig.github.io/img/projects/eroulette.png"
+  url: "http://edwrodrig.github.io/eroulette"
+
 - name: "Far Flight"
   description: "Far Flight is a simple html5 canvas game. Your objective is to fly as far as you can without crashing the blocks in the way. The speed increases through time making the game harder everytime."
   image: "http://edwrodrig.github.io/img/projects/far-flight.png"
