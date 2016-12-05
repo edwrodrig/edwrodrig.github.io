@@ -1,9 +1,0 @@
-{% unless site.sharing == empty %}
-<div class="text-right">
-  {% if site.sharing.style == "square" %}Share on{% endif %}
-  {% for service in site.sharing.services %}
-    {% capture service_path %}base/share/{{ service }}{% endcapture %}
-    {% include {{service_path}} %}
-  {% endfor %}
-</div>
-{% endunless %}
