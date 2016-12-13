@@ -9,7 +9,7 @@ ul { list-style-type: none; padding:0; margin:0}
 h1, h2, h3, h4, p { margin:0; }
 </style>
 </head>
-<body style="padding:0;margin:0;font-family:'Cutive Mono', monospace;background-color:black;color:#AAA;"><div style="background-color:rgba(255,255,255, 0.3);"><style>.s6{max-width:1000px;margin:0 auto;overflow-x:hidden;}</style><div class="s6"><header style="display:flex;flex-direction:row;position:relative;"><div>Edwin Rodríguez</div><div style="flex-grow:1;"></div><style>@media (min-width:600px){.s3{display:none !important;}}</style><div style="align-self:flex-end;" class="s3"><style>.s4{padding:0.222em;border:1px solid transparent;border-radius:0.2em;}.s4 > *{width:1.5em;height:0.333em;border-radius:0.06em;margin:0.3em;}</style><button id="t1" class="s4"><div></div><div></div><div></div></button></div><style>@media (max-width:600px){.s0{display:none !important;}}</style><nav style="display:flex;flex-direction:row;" class="s0"><style>.s1{display:block;padding:0.5em 0.7em;white-space:nowrap;}</style><a href="/index.html" title="Inicio" class="s1">Inicio</a><a href="/projects.html" title="Proyectos" class="s1">Proyectos</a></nav></header></div></div><style>.s2{display:flex;flex-direction:column;}</style><nav id="t0" style="display:none;" class="s3 s2"><a href="/index.html" title="Inicio" class="s1">Inicio</a><a href="/projects.html" title="Proyectos" class="s1">Proyectos</a></nav><script>
+<body style="padding:0;margin:0;font-family:'Cutive Mono', monospace;background-color:black;color:#AAA;"><div style="background-color:rgba(255,255,255, 0.3);"><style>.s6{max-width:1000px;margin:0 auto;overflow-x:hidden;}</style><div class="s6"><header style="display:flex;flex-direction:row;position:relative;"><div>Edwin Rodríguez</div><div style="flex-grow:1;"></div><style>@media (min-width:600px){.s3{display:none !important;}}</style><div style="align-self:flex-end;" class="s3"><style>.s4{padding:0.222em;border:1px solid transparent;border-radius:0.2em;}.s4 > *{width:1.5em;height:0.333em;border-radius:0.06em;margin:0.3em;}</style><button id="t1" class="s4"><div></div><div></div><div></div></button></div><style>@media (max-width:600px){.s0{display:none !important;}}</style><nav style="display:flex;flex-direction:row;" class="s0"><style>.s1{display:block;padding:0.5em 0.7em;white-space:nowrap;}</style><a href="/index.html" title="Home" class="s1">Home</a><a href="/projects.html" title="Projects" class="s1">Projects</a></nav></header></div></div><style>.s2{display:flex;flex-direction:column;}</style><nav id="t0" style="display:none;" class="s3 s2"><a href="/index.html" title="Home" class="s1">Home</a><a href="/projects.html" title="Projects" class="s1">Projects</a></nav><script>
 document.getElementById('t1').addEventListener('click', function() {
   var e = document.getElementById('t0');
   e.style.display = (e.style.display == 'none' ) ? '' : 'none';
@@ -22,14 +22,27 @@ document.getElementById('t1').addEventListener('click', function() {
           <div class="panel-heading">Posts</div>
           <div class="panel-body">
 		    <ul class="media-list">
-		    {% for post in site.posts offset: 0 limit: 5 %}
 		      <li class="media">
 			    <div class="media-body">
-			      <h4 class="media-heading"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h4>
-			      <p>{{ post.date | date: "%B %e, %Y" }}</p>
+			      <h4 class="media-heading"><a href="/post/2014-12-04-wrap-ui-considering-namespaces-using-cmake.html">
+                  Wrap UI considering namespace using CMake</a></h4>
+			      <p>Thursday, December  4, 2014</p>
 			    </div>
 		      </li>
-			{% endfor %}
+		      <li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading"><a href="/post/2014-05-05-testing-multiple-classes-using-c++11-lambdas-in-qt.html">
+                  Testing multiple classes using c++11 lambdas in Qt</a></h4>
+			      <p>Monday, May  5, 2014</p>
+			    </div>
+		      </li>
+		      <li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading"><a href="/post/2014-04-18-social-metadata-for-pages.html">
+                  Social metadata for pages</a></h4>
+			      <p>Friday, April 18, 2014</p>
+			    </div>
+		      </li>
 			</ul>
 			<p><a class="btn btn-primary btn-sm" role="button" href="{{ base_path }}/archive.html">More posts</a></p>
           </div>
