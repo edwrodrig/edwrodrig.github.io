@@ -14,10 +14,28 @@ document.getElementById('t1').addEventListener('click', function() {
   var e = document.getElementById('t0');
   e.style.display = (e.style.display == 'none' ) ? '' : 'none';
 }, true);
-</script><div><style>.s9{padding:0.5em;}</style><div class="s8 s9"><h1>Traverse directories on PHP</h1><time style="display:block;padding-bottom:2em;">Friday, December 23, 2016</time><style>.s13 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s13 > h1{margin:1em 0;}.s13 > h2{margin-bottom:0.5em;text-decoration:underline;text-align:left;}</style><div class="s13"><h2>Recursive Way</h2>
+</script><div><style>.s9{padding:0.5em;}</style><div class="s8 s9"><h1>Traverse directories on PHP</h1><time style="display:block;padding-bottom:2em;">Friday, December 23, 2016</time><style>.s13 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s13 > h1{margin:1em 0;}.s13 > h2{margin-bottom:0.5em;text-decoration:underline;text-align:left;}</style><div class="s13"><h2>Iterate files excluding dots</h2>
 
 <pre>
-foreach ( new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($directory)) as $file ) {
+foreach (new DirectoryIterator($dirname) as $file) {
+    if($file->isDot()) continue;
+    echo $file->getFilename();
+}
+</pre>
+
+<h2>Iterate filtering by extension</h2>
+
+<pre>
+foreach (new DirectoryIterator($dirname) as $file) {
+    if($file->getExtension() !== 'exe' ) continue;
+    echo $file->getFilename();
+}
+</pre>
+
+<h2>Recursive Way</h2>
+
+<pre>
+foreach ( new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dirname)) as $file ) {
   if ( $file->isFile() )
     $file->getPathname();
   }
