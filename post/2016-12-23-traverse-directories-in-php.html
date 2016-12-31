@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge"><title>Edwin Rodríguez</title><meta name="description" content="I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information." /><meta name="og:title" content="Edwin Rodríguez" /><meta name="og:description" content="I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information." /><meta itemprop="name" content="Edwin Rodríguez" /><meta itemprop="description" content="I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information." /><meta name="twitter:card" content="" /><meta name="twitter:description" content="I'm a enthusiast software engineer interested is many topics like development, phylosophy, science and art. Here are my blog, projects and contact information." /><link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet" type="text/css"><style>
-pre { font-family: inherit; color: white }
+pre { font-family: inherit; color: white; white-space: pre-wrap; }
 code { font-family: inherit; color: white }
 </style>
 <style>
@@ -39,7 +39,9 @@ foreach (new DirectoryIterator($dirname) as $file) {
 <h2>Recursive Way</h2>
 
 <pre>
-foreach ( new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dirname)) as $file ) {
+foreach ( new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($dirname)
+          ) as $file ) {
   if ( $file->isFile() )
     $file->getPathname();
   }
