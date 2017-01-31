@@ -20,22 +20,20 @@ document.getElementById('t1').addEventListener('click', function() {
 }, true);
 </script><div><style>.s9{padding:0.5em;}</style><div class="s8 s9"><h1>Regular expression tricks in php</h1><time style="display:block;padding-bottom:2em;">Tuesday, January 31, 2017</time><style>.s13 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s13 > h1{margin:1em 0;}.s13 > h2{margin-bottom:0.5em;text-decoration:underline;text-align:left;}</style><div class="s13"><h2>Capture string between</h2>
 <pre>
-$needle = '/<div class="list-group">(.+)<\/div>/s';
+$needle = '/&lt;div class=&quot;list-group&quot;&gt;(.+)&lt;\/div&gt;/s';
 if ( preg_match($needle, $haysack, $matches) ) {
   $between = $matches[1];
-}
-</pre>
+}</pre>
 
 <h2>Capture all matches</h2>
 <pre>
-$needle = '/<a href="(.+)" class=".+" title="(.+)" style/';
+$needle = '/&lt;a href=&quot;(.+)&quot; class=&quot;.+&quot; title=&quot;(.+)&quot; style/';
 if ( preg_match_all($needle, $haysack, $matches, PREG_SET_ORDER) ) {
   foreach ( $matches as $m ) {
     $href = $m[1];
     $title= $m[2];
   }
-}
-</pre>
+}</pre>
 
 </div></div></div><div><div class="s8 s9"><style>.s15{display:flex;flex-direction:row;justify-content:center;flex-flow:wrap;}.s15 > *{margin:0.5em;}</style><div class="s15"><style>.s14{display:block;background-size:cover;background-position:center;width:50px;min-width:50px;height:50px;}</style><a style="background-image:url(/img/icons/github.png);" href="http://www.github.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/linkedin.png);" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848" class="s14"></a><a style="background-image:url(/img/icons/google-play.png);" href="http://play.google.com/store/apps/developer?id=edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/deviantart.png);" href="http://edwrodrig.deviantart.com/" class="s14"></a><a style="background-image:url(/img/icons/twitter.png);" href="https://twitter.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/pinterest.jpg);" href="http://www.pinterest.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/codepen.png);" href="http://www.codepen.io/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/youtube.png);" href="https://www.youtube.com/user/edwrodrig1" class="s14"></a></div><div style="text-align:center;display:flex;flex-direction:column;justify-content:center;overflow:hidden;">2015 - Edwin Rodríguez</div></div></div><script>
 var _gaq = _gaq || [];
