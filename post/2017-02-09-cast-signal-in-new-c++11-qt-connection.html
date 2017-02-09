@@ -24,24 +24,25 @@ document.getElementById('t1').addEventListener('click', function() {
   var e = document.getElementById('t0');
   e.style.display = (e.style.display == 'none' ) ? '' : 'none';
 }, true);
-</script><div><style>.s9{padding:0.5em;}</style><div class="s8 s9"><h1>Social metadata for pages</h1><time style="display:block;padding-bottom:2em;">Friday, April 18, 2014</time><style>.s13 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s13 > h1{margin:1em 0;}.s13 > h2{margin-bottom:0.5em;text-decoration:underline;text-align:left;}</style><div class="s13"><p>In this article is explained how to add social metadata for a html page. This metadata is used for showing nice description boxes in social networks when you share a link on them.</p>
+</script><div><style>.s9{padding:0.5em;}</style><div class="s8 s9"><h1>Cast signal in new C++11 Qt connection</h1><time style="display:block;padding-bottom:2em;">Thursday, February  9, 2017</time><style>.s13 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s13 > h1{margin:1em 0;}.s13 > h2{margin-bottom:0.5em;text-decoration:underline;text-align:left;}</style><div class="s13">
+<p>This is the template</p>
+<pre>
+static_cast<return_type(ClassName::*)(arg_type1, arg_type2)>
+</pre>
 
-<h2>Code</h2>
-<p>Paste the following code in the html head section. You may replace the contents like author data and page descriptions by your own ones.</p>
+<p>Example</p>
+<pre>
+static_cast<void (QComboBox::*)(const QString &)>(&QComboBox::activated)
+</pre>
 
-<script src="https://gist.github.com/edwrodrig/39b3fda59d94aececb73.js"></script>
+<p>Full example</p>
 
-<h2>Validation tools</h2>
-<p>There are links to validation tools for the main social meta tags.</p>
-
-<ul>
-<li><a href="https://developers.facebook.com/tools/debug/">Facebook Open Graph</a></li>
-<li><a href="https://dev.twitter.com/docs/cards/validation/validator">Twitter Card Validator</a></li>
-<li><a href="http://www.google.com/webmasters/tools/richsnippets">Google</a></li>
-</ul>
-
-<h2>Notes</h2>
-<p>When you make a change of some meta tag content it's recommended to re-test it with the validation tools. At least Facebook recognizes new metadata if you reload a page with its validation tool.</p>
+<pre>
+connect(ui->comboBox, 
+        static_cast<void (QComboBox::*)(const QString &)>(&QComboBox::activated),
+        ps,
+        &PlotSystem::requestPlotsAvailable);
+</pre>
 </div></div></div><div><div class="s8 s9"><style>.s15{display:flex;flex-direction:row;justify-content:center;flex-flow:wrap;}.s15 > *{margin:0.5em;}</style><div class="s15"><style>.s14{display:block;background-size:cover;background-position:center;width:50px;min-width:50px;height:50px;}</style><a style="background-image:url(/img/icons/github.png);" href="http://www.github.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/linkedin.png);" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848" class="s14"></a><a style="background-image:url(/img/icons/google-play.png);" href="http://play.google.com/store/apps/developer?id=edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/deviantart.png);" href="http://edwrodrig.deviantart.com/" class="s14"></a><a style="background-image:url(/img/icons/twitter.png);" href="https://twitter.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/pinterest.jpg);" href="http://www.pinterest.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/codepen.png);" href="http://www.codepen.io/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/youtube.png);" href="https://www.youtube.com/user/edwrodrig1" class="s14"></a></div><div style="text-align:center;display:flex;flex-direction:column;justify-content:center;overflow:hidden;">2015 - Edwin Rodríguez</div></div></div><script>
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-49580762-2']);
