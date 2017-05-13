@@ -12,33 +12,21 @@ document.getElementById('t1').addEventListener('click', function() {
   var e = document.getElementById('t0');
   e.style.display = (e.style.display == 'none' ) ? '' : 'none';
 }, true);
-</script><div><style>.s7{padding:0.5em;}</style><div class="s13 s7"><style>.s11{font-family:'VT323', monospace;margin-bottom:1em;font-weight:unset;}</style><h1 style="font-size:3em;margin-bottom:0em;" class="s11">Get file and line where a function is called in php</h1><time style="display:block;">Miércoles  1 de Febrero de 2017</time><style>.s12{border:0;border-bottom:1px dashed;margin:3em 0;}</style><hr class="s12"/><style>.s9 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s9 > h1{margin:1em 0;font-family:'VT323', monospace;font-weight:unset;}.s9 > h2{margin-bottom:0.5em;text-decoration:underline;font-family:'VT323', monospace;font-weight:unset;}.s9 a{color:yellow;text_decoration:none;}.s9 a:hover{text_decoration:underline;}.s9 > pre{color:white;font-family:inherit;border:1px solid;padding:1em;overflow:hidden;font-size:0.8em;white-space:pre-wrap;}.s9 code{color:white;font-family:inherit;}.s9 > pre a{color:inherit;text-decoration:none;}</style><div class="s9"><p>There is the code</p>
-
+</script><div><style>.s7{padding:0.5em;}</style><div class="s13 s7"><style>.s11{font-family:'VT323', monospace;margin-bottom:1em;font-weight:unset;}</style><h1 style="font-size:3em;margin-bottom:0em;" class="s11">Ejecutar script PHP desde la web</h1><time style="display:block;">Sábado 13 de Mayo de 2017</time><style>.s12{border:0;border-bottom:1px dashed;margin:3em 0;}</style><hr class="s12"/><style>.s9 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s9 > h1{margin:1em 0;font-family:'VT323', monospace;font-weight:unset;}.s9 > h2{margin-bottom:0.5em;text-decoration:underline;font-family:'VT323', monospace;font-weight:unset;}.s9 a{color:yellow;text_decoration:none;}.s9 a:hover{text_decoration:underline;}.s9 > pre{color:white;font-family:inherit;border:1px solid;padding:1em;overflow:hidden;font-size:0.8em;white-space:pre-wrap;}.s9 code{color:white;font-family:inherit;}.s9 > pre a{color:inherit;text-decoration:none;}</style><div class="s9"><p>
+En ocasiones necesito pasar a algunas personas un pequeño script que haga una función especifica.
+Lo que hacía en tales ocasiones era enviarle dicho script por mail.
+Pero comunmente ese script no funcionaba en la primera ocasión por diferencias en la máquina o en el caso que funcionará, necesitaban una pequeña función adicional.
+Cualquiera fuera el caso, tenía que corregir el script y después volverlo a enviar por mail.
+Todo sería más facil si se pudiera disponibilizar el script de una forma más adecuada.
+Pués encontré una forma más apropiada de hacerlo disponibilizando el script en una URL y ejecutandolo con el siguiente comando:
+</p>
 <pre>
-function hola() {
-  var_dump(debug_backtrace()[0]);
-}
-
-function chao() {
-  hola();
-}
-
-chao();
+php -d allow_url_include=On -r "include('http://path/to/script.php');"
 </pre>
-
-<p>The output</p>
-
-<pre>
-array(4) {
-  ["file"]=>
-  string(20) "/home/edwin/hola.php"
-  ["line"]=>
-  int(8)
-  ["function"]=>
-  string(4) "hola"
-  ["args"]=>
-  array(0) {
-  }
-}
-</pre>
+<p>
+PHP no te permite correr directamente un script por una URL,
+pero podemos hacerlo corriendo directamente código PHP mediante la opción <code>-r</code>,
+donde simplemente hacemos un <code>include</code> del script en cuestión.
+Adicionalmente necesitamos habilitar la opción <code>allow_url_include</code> ya que por razones de seguridad, PHP no permite incluir URLs.
+</p>
 </div></div></div><div><div class="s13 s7"><hr class="s12"/><div style="display:flex;flex-direction:row;justify-content:center;flex-flow:wrap;"><style>.s14{display:block;background-size:cover;background-position:center;width:50px;min-width:50px;height:50px;}</style><a style="background-image:url(/img/icons/github.png);" href="http://www.github.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/linkedin.png);" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848" class="s14"></a><a style="background-image:url(/img/icons/google-play.png);" href="http://play.google.com/store/apps/developer?id=edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/deviantart.png);" href="http://edwrodrig.deviantart.com/" class="s14"></a><a style="background-image:url(/img/icons/twitter.png);" href="https://twitter.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/pinterest.jpg);" href="http://www.pinterest.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/codepen.png);" href="http://www.codepen.io/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/youtube.png);" href="https://www.youtube.com/user/edwrodrig1" class="s14"></a></div><div style="margin:0.5em;text-align:center;display:flex;flex-direction:column;justify-content:center;overflow:hidden;">2017 - Edwin Rodríguez</div></div></div></body></html></html>
