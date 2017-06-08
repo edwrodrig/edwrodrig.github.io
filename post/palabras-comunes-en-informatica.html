@@ -12,33 +12,103 @@ document.getElementById('t1').addEventListener('click', function() {
   var e = document.getElementById('t0');
   e.style.display = (e.style.display == 'none' ) ? '' : 'none';
 }, true);
-</script><div><style>.s7{padding:0.5em;}</style><div class="s13 s7"><style>.s11{font-family:'VT323', monospace;margin-bottom:1em;font-weight:unset;}</style><h1 style="font-size:3em;margin-bottom:0em;" class="s11">Get file and line where a function is called in php</h1><time style="display:block;">Miércoles  1 de Febrero de 2017</time><style>.s12{border:0;border-bottom:1px dashed;margin:3em 0;}</style><hr class="s12"/><style>.s9 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s9 > h1{margin:1em 0;font-family:'VT323', monospace;font-weight:unset;}.s9 > h2{margin-bottom:0.5em;text-decoration:underline;font-family:'VT323', monospace;font-weight:unset;}.s9 a{color:yellow;text_decoration:none;}.s9 a:hover{text_decoration:underline;}.s9 > pre{color:white;font-family:inherit;border:1px solid;padding:1em;overflow:hidden;font-size:0.8em;white-space:pre-wrap;}.s9 code{color:white;font-family:inherit;}.s9 > pre a{color:inherit;text-decoration:none;}</style><div class="s9"><p>There is the code</p>
+</script><div><style>.s7{padding:0.5em;}</style><div class="s13 s7"><style>.s11{font-family:'VT323', monospace;margin-bottom:1em;font-weight:unset;}</style><h1 style="font-size:3em;margin-bottom:0em;" class="s11">Palabras comunes en informática</h1><time style="display:block;">Lunes 15 de Mayo de 2017</time><style>.s12{border:0;border-bottom:1px dashed;margin:3em 0;}</style><hr class="s12"/><style>.s9 > p{text-align:justify;line-height:1.42857143em;margin-bottom:1em;}.s9 > h1{margin:1em 0;font-family:'VT323', monospace;font-weight:unset;}.s9 > h2{margin-bottom:0.5em;text-decoration:underline;font-family:'VT323', monospace;font-weight:unset;}.s9 a{color:yellow;text_decoration:none;}.s9 a:hover{text_decoration:underline;}.s9 > pre{color:white;font-family:inherit;border:1px solid;padding:1em;overflow:hidden;font-size:0.8em;white-space:pre-wrap;}.s9 code{color:white;font-family:inherit;}.s9 > pre a{color:inherit;text-decoration:none;}</style><div class="s9"><h2>Conceptos generales</h2>
+<ul>
+<li>bit: Un 0 o un 1</li>
+<li>byte: 8 bits</li>
+<li>CPU: Central Processing Unit, Unidad central de procesamiento</li>
+<li>RAM: Random Access Memory, Memoria de acceso aleatorio</li>
+<li>LAN: Local Area Network, Red de area local</li>
+<li>WAN: Wide Area Network, Red de area amplia</li>
+<li>pixel: Picture element, Elemento de imagen</li>
+</ul>
+
+<h2>Ejemplos de condicionales</h2>
 
 <pre>
-function hola() {
-  var_dump(debug_backtrace()[0]);
+if ( condición ) {
+  //cuando se cumple la condición
 }
-
-function chao() {
-  hola();
-}
-
-chao();
 </pre>
-
-<p>The output</p>
 
 <pre>
-array(4) {
-  ["file"]=>
-  string(20) "/home/edwin/hola.php"
-  ["line"]=>
-  int(8)
-  ["function"]=>
-  string(4) "hola"
-  ["args"]=>
-  array(0) {
-  }
+if ( condición ) {
+  //cuando se cumple la condición
+} else {
+  //en caso contrario
 }
 </pre>
+
+
+<pre>
+if ( condición_1 ) {
+  //cuando se cumple la condición_1
+} else if ( condición_2 ) {
+  //cuando no se cumple la condición_1 y se cumple la condición_2
+} 
+</pre>
+
+
+<pre>
+if ( condición_1 ) {
+  //cuando se cumple la condición_1
+} else if ( condición_2 ) {
+  //cuando no se cumple la condición_1 y se cumple la codición_2
+} else if ( condición_3 ) {
+  //cuando no se cumple la condición_1 ni la condición_2 y se cumple la condición_3
+}
+...
+} else if ( condición_n ) {
+  //cuando no se cumple ninguna de las condiciones anteriores y se cumple la condición_n
+} else {
+  //cuando no se cumple ninguna condición anterior
+}
+</pre>
+
+<h2>Ejemplos de bucles</h2>
+
+<pre>
+while ( condición ) {
+  //esto se ejecuta siempre cuando se ejecuta mientras se cumpla la condición
+}
+</pre>
+
+<p>Bucle infinito</p>
+<pre>
+while ( true ) {
+  //esto se ejecuta siempre
+}
+</pre>
+
+<p>Bucle que se ejecuta 1000 veces<p>
+<pre>
+$contador = 0;
+
+while ( $contador < 1000 ) {
+  $contador++; 
+}
+</pre>
+
+<p>Bucle que imprime los números del 1 al 10<p>
+<pre>
+$contador = 1;
+
+while ( $contador <= 10 ) {
+  echo $contador;
+  $contador++;
+}
+</pre>
+
+<p>Bucle que imprime los números del 10 al 1<p>
+<pre>
+$contador = 10;
+
+while ( $contador >= 1 ) {
+  echo $contador;
+  $contador--;
+}
+
+</pre>
+
+
 </div></div></div><div><div class="s13 s7"><hr class="s12"/><div style="display:flex;flex-direction:row;justify-content:center;flex-flow:wrap;"><style>.s14{display:block;background-size:cover;background-position:center;width:50px;min-width:50px;height:50px;}</style><a style="background-image:url(/img/icons/github.png);" href="http://www.github.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/linkedin.png);" href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848" class="s14"></a><a style="background-image:url(/img/icons/google-play.png);" href="http://play.google.com/store/apps/developer?id=edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/deviantart.png);" href="http://edwrodrig.deviantart.com/" class="s14"></a><a style="background-image:url(/img/icons/twitter.png);" href="https://twitter.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/pinterest.jpg);" href="http://www.pinterest.com/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/codepen.png);" href="http://www.codepen.io/edwrodrig" class="s14"></a><a style="background-image:url(/img/icons/youtube.png);" href="https://www.youtube.com/user/edwrodrig1" class="s14"></a></div><div style="margin:0.5em;text-align:center;display:flex;flex-direction:column;justify-content:center;overflow:hidden;">2017 - Edwin Rodríguez</div></div></div></body></html></html>
