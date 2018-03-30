@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono|VT323">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/style/style.css">
+
+        <link rel="shortcut icon" sizes="16x16" href="/assets/favicon-16.png">
+        <link rel="shortcut icon" sizes="24x24" href="/assets/favicon-24.png">
+        <link rel="shortcut icon" sizes="32x32" href="/assets/favicon-32.png">
+        <link rel="shortcut icon" sizes="48x48" href="/assets/favicon-48.png">
+        <link rel="shortcut icon" sizes="64x64" href="/assets/favicon-64.png">
+
+
+        <!-- Mobile (Android, iOS & others) -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon-57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon-152.png">
+
+        <!-- Windows 8 Tiles -->
+        <meta name="application-name" content="Scotch Scotch scotch">
+        <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
+        <meta name="msapplication-TileColor" content="#2A2A2A">
+
+        <!-- iOS Settings -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <script src="/lib.js"></script>
+        <title>Comandos útiles con ImageMagick</title>
+    </head>
+    <body>
+            <div>
+            <div class="section-container container-padding header">
+                <a class="header-name" href="/">Edwin Rodríguez</a>
+                <button type="button" class="nav-button" onclick="ANIM.modal_in('nav-menu')">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+                <div id="nav-menu" style="display:none">
+            <div class="section-container nav-menu-items">
+                <h1>Edwin Rodríguez</h1>
+                <a href="/">Inicio</a>
+                <a href="/posts.html">Artículos</a>
+                <a href="/projects.html">Proyectos</a>
+                <button type="button" class="nav-menu-close" onclick="ANIM.modal_out('nav-menu')"><i class="fa fa-times"></i></i></button>
+            </div>
+        </div>
+                    <div>
+    <div class='section-container container-padding'>
+        <header class="section-header post-box">
+            <h1>Comandos útiles con ImageMagick</h1>
+            <time><i class="fa fa-clock-o"></i>Sábado 13 de Mayo de 2017</time>
+        </header>
+        <hr/>
+        <div class="paragraph">
+        <p>ImageMagick es el photoshop en línea de comandos. A continuación listaré unos comandos que nos serán útiles a la hora de ciertas manipulaciones de imagenes comunes.</p>
+
+<h2>Cambiar tamaño de imagen</h2>
+<pre>convert <b>input.png</b> -resize <b>output.png</b></pre>
+
+<h2>Teñir la imagen de un color</h2>
+<pre>convert <b>input.png</b> -fill "<b>#FF0000</b>" -tint 100 <b>output.png</b></pre>
+<p>Este comando tiñe la imagen del color especificado.
+Teñir funciona solo con los tonos medios, en concreto,
+los píxeles blancos quedan blanco y los negros quedan negros.</p>
+
+<h2>Colorizar la imagen</h2>
+<pre>convert <b>input.png</b> -matte -fill "<b>#00FF00</b>" -colorize 100  <b>output.png</b></pre>
+<p>Este comando deja la imagen como una sombra de un solo color sin medio tonos.
+Todos los píxeles son transformados al color pero manteniendo la transparencia.</p>
+
+<h2>Dar borde a la imagen</h2>
+<pre>convert <b>input.png</b> -matte -bordercolor none -border <b>3x3</b> <b>output.png</b></pre>
+
+<h2>Brillo externo</h2>
+<pre>convert <b>input.png</b> -matte -bordercolor none -border <b>20x20</b> <b>temp_base.png</b>
+convert <b>temp_base.png</b> -matte -fill "white" -colorize 100 -blur <b>20x20</b> <b>temp_glow.png</b>
+convert <b>temp_glow.png</b> <b>temp_base.png</b> -compose Over -composite <b>output.png</b>
+</pre>
+
+<h2>Convertir imagen SVG a PNG con inkscape</h2>
+<pre>inkscape -D --export-png=<b>output.png</b> -w <b>800</b> -h <b>100</b> <b>input.svg</b></pre>
+<p>Donde <code>-w</code> es el ancho de la imagen y <code>-h</code> es el alto, en píxeles.
+Si se omite alguno de los dos argumentos anteriores, se deduce el otro tal que se conserve la razón de aspecto.
+Se distorcionará la imagen de salida, si los valores introducidos no corresponden a la razón de aspecto.</p>
+        </div>
+    </div>
+</div>
+            <div>
+            <div class="section-container container-padding">
+                <hr>
+                        <div class="social-buttons-bar">
+            <a href="http://www.github.com/edwrodrig"><i class="fa fa-github"></i></a>
+            <a href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848"><i class="fa fa-linkedin"></i></a>
+            <a href="https://stackoverflow.com/users/2469099/edwin-rodr%c3%adguez?tab=profile"><i class="fa fa-stack-overflow"></i></a>
+            <a href="http://play.google.com/store/apps/developer?id=edwrodrig"><i class="fa fa-android"></i></a>
+            <a href="http://edwrodrig.deviantart.com/"><i class="fa fa-deviantart"></i></a>
+            <a href="https://twitter.com/edwrodrig"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.pinterest.com/edwrodrig"><i class="fa fa-pinterest"></i></a>
+            <a href="http://www.codepen.io/edwrodrig"><i class="fa fa-codepen"></i></a>
+            <a href="https://www.youtube.com/user/edwrodrig1"><i class="fa fa-youtube-play"></i></a>
+        </div>
+                        <div class="footer-endline">
+                    2018 - Edwin Rodríguez León
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

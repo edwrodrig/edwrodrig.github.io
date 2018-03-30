@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono|VT323">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/style/style.css">
+
+        <link rel="shortcut icon" sizes="16x16" href="/assets/favicon-16.png">
+        <link rel="shortcut icon" sizes="24x24" href="/assets/favicon-24.png">
+        <link rel="shortcut icon" sizes="32x32" href="/assets/favicon-32.png">
+        <link rel="shortcut icon" sizes="48x48" href="/assets/favicon-48.png">
+        <link rel="shortcut icon" sizes="64x64" href="/assets/favicon-64.png">
+
+
+        <!-- Mobile (Android, iOS & others) -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon-57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon-152.png">
+
+        <!-- Windows 8 Tiles -->
+        <meta name="application-name" content="Scotch Scotch scotch">
+        <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
+        <meta name="msapplication-TileColor" content="#2A2A2A">
+
+        <!-- iOS Settings -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <script src="/lib.js"></script>
+        <title>Probando muchas clases usando lambdas en Qt</title>
+    </head>
+    <body>
+            <div>
+            <div class="section-container container-padding header">
+                <a class="header-name" href="/">Edwin Rodríguez</a>
+                <button type="button" class="nav-button" onclick="ANIM.modal_in('nav-menu')">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+                <div id="nav-menu" style="display:none">
+            <div class="section-container nav-menu-items">
+                <h1>Edwin Rodríguez</h1>
+                <a href="/">Inicio</a>
+                <a href="/posts.html">Artículos</a>
+                <a href="/projects.html">Proyectos</a>
+                <button type="button" class="nav-menu-close" onclick="ANIM.modal_out('nav-menu')"><i class="fa fa-times"></i></i></button>
+            </div>
+        </div>
+                    <div>
+    <div class='section-container container-padding'>
+        <header class="section-header post-box">
+            <h1>Probando muchas clases usando lambdas en Qt</h1>
+            <time><i class="fa fa-clock-o"></i>Lunes  5 de Mayo de 2014</time>
+        </header>
+        <hr/>
+        <div class="paragraph">
+        <p>Me parece problemático organizar mis pruebas unitarias de QT en muchas clases. Algunas macros como <code>QTEST_APPLESS_MAIN</code> te obliga a tener un proyecto por clase de prueba unitaria, lo que puede convertirse en un dolor de cabeza. Si tu estas usando c++11, puedes aprovechar las funciones lambdas para lidiar fácilmente con este problema.</p>
+
+<h2>Código</h2>
+
+<p>La magia:
+<script src="https://gist.github.com/edwrodrig/5c84af39bc151f4cd815.js?file=%20qt_test_main_lambda.cpp"></script>
+</p>
+
+<h2>Soluciones alternativas</h2>
+
+<p>Si no te gusta mi solución, prueba con estas alternativas:
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/12194256/qt-how-to-organize-unit-test-with-more-than-one-class">Incluyendo todo</a></li>
+<li><a href="http://qtcreator.blogspot.com/2009/10/running-multiple-unit-tests.html">Usando una librería</a></li>
+</ul>
+
+</p>
+        </div>
+    </div>
+</div>
+            <div>
+            <div class="section-container container-padding">
+                <hr>
+                        <div class="social-buttons-bar">
+            <a href="http://www.github.com/edwrodrig"><i class="fa fa-github"></i></a>
+            <a href="http://www.linkedin.com/pub/edwin-iv%C3%A1n-rodr%C3%ADguez-le%C3%B3n/35/241/848"><i class="fa fa-linkedin"></i></a>
+            <a href="https://stackoverflow.com/users/2469099/edwin-rodr%c3%adguez?tab=profile"><i class="fa fa-stack-overflow"></i></a>
+            <a href="http://play.google.com/store/apps/developer?id=edwrodrig"><i class="fa fa-android"></i></a>
+            <a href="http://edwrodrig.deviantart.com/"><i class="fa fa-deviantart"></i></a>
+            <a href="https://twitter.com/edwrodrig"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.pinterest.com/edwrodrig"><i class="fa fa-pinterest"></i></a>
+            <a href="http://www.codepen.io/edwrodrig"><i class="fa fa-codepen"></i></a>
+            <a href="https://www.youtube.com/user/edwrodrig1"><i class="fa fa-youtube-play"></i></a>
+        </div>
+                        <div class="footer-endline">
+                    2018 - Edwin Rodríguez León
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
