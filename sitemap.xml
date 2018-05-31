@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 ">
             <sitemap>
-            <loc>sitemap.xml</loc>
+            <loc>/sitemap.xml</loc>
         </sitemap>
-                <sitemap>
-            <loc>https://www.edwin.cl/posts/sitemap.xml</loc>
+            <sitemap>
+            <loc>/posts/sitemap.xml</loc>
         </sitemap>
-        </sitemapindex>
+    </sitemapindex>
 

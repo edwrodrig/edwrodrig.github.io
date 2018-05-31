@@ -1,42 +1,18 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono|VT323">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="En este art&iacute;culo una serie de trucos de expresiones regulares comunes usando php"><meta property="og:type" content="website"/><meta property="og:title" content="Trucos de expresiones reguales en php"/><meta property="og:description" content="En este art&iacute;culo una serie de trucos de expresiones regulares comunes usando php"/><meta property="og:image" content="/cache/images/meta_5b0f5fd8f1027.jpg"/><meta property="og:update_time" content="2018-05-30T23:42:46-0300"/><meta property="og:see_also" content="https://github.com/edwrodrig"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@edwrodrig"/><meta name="twitter:description" content="En este art&iacute;culo una serie de trucos de expresiones regulares comunes usando php"/><meta name="twitter:title" content="Trucos de expresiones reguales en php"/><meta name="twitter:image" content="/cache/images/meta_5b0f5fd8f1027.jpg"/><meta name="twitter:image:alt" content="My portrait"/><link rel="shortcut icon" sizes="16x16" href="/cache/images/favicon_16x16_contain_5afe32f15c40d.png"><link rel="shortcut icon" sizes="24x24" href="/cache/images/favicon_24x24_contain_5afe32f177003.png"><link rel="shortcut icon" sizes="32x32" href="/cache/images/favicon_32x32_contain_5afe32f178687.png"><link rel="shortcut icon" sizes="48x48" href="/cache/images/favicon_48x48_contain_5afe32f179446.png"><link rel="shortcut icon" sizes="64x64" href="/cache/images/favicon_64x64_contain_5afe32f17a2ea.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="apple-touch-icon" sizes="72x72" href="/cache/images/favicon_72x72_contain_5afe32f17bc0d.png"><link rel="apple-touch-icon" sizes="152x152" href="/cache/images/favicon_152x152_contain_5afe32f17fb94.png"><link rel="apple-touch-icon" sizes="167x167" href="/cache/images/favicon_167x167_contain_5b0f5a1c1ba7b.png"><link rel="apple-touch-icon" sizes="180x180" href="/cache/images/favicon_180x180_contain_5b0f5a1c323f9.png">        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono|VT323">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/style/style.css">
 
-        <link rel="shortcut icon" sizes="16x16" href="/assets/images/favicon_16x16_contain_5aceb84d58ef2.png">
-        <link rel="shortcut icon" sizes="24x24" href="/assets/images/favicon_24x24_contain_5aceb84d951c5.png">
-        <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon_32x32_contain_5aceb84d9563b.png">
-        <link rel="shortcut icon" sizes="48x48" href="/assets/images/favicon_48x48_contain_5aceb84d95a65.png">
-        <link rel="shortcut icon" sizes="64x64" href="/assets/images/favicon_64x64_contain_5aceb84d95f60.png">
-
-
-        <!-- Mobile (Android, iOS & others) -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon_57x57_contain_5aceb84d96678.png">
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicon_57x57_contain_5aceb84d96678.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon_72x72_contain_5aceb84d96e05.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon_114x114_contain_5aceb84d976f6.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon_120x120_contain_5aceb84d988f2.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon_144x144_contain_5aceb84d9978d.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon_152x152_contain_5aceb84d9a752.png">
-
-        <!-- Windows 8 Tiles -->
-        <meta name="application-name" content="Página de Edwin Rodríguez">
-        <meta name="msapplication-TileImage" content="/assets/images/favicon_144x144_contain_5aceb84d9978d.png">
-        <meta name="msapplication-TileColor" content="#2A2A2A">
-
-        <!-- iOS Settings -->
-        <meta content="yes" name="apple-mobile-web-app-capable">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <script src="/lib.js"></script>
         <title>Trucos de expresiones reguales en php</title>
     </head>
-    <body>
+<body>
             <div class="container-padding" style="position:fixed;width:100%;display:flex;flex-direction:row-reverse;box-sizing:border-box">
-            <button type="button" class="nav-button" onclick="ANIM.modal_in('nav-menu')">
+            <button type="button" class="nav-button" onclick="ANIM.modalIn('nav-menu')">
                 <i class="fa fa-bars"></i>
             </button>
         </div>
@@ -49,10 +25,10 @@
                 <a href="/">Inicio</a>
                 <a href="/posts.html">Artículos</a>
                 <a href="/projects.html">Proyectos</a>
-                <button type="button" class="nav-menu-close" onclick="ANIM.modal_out('nav-menu')"><i class="fa fa-times"></i></i></button>
+                <button type="button" class="nav-menu-close" onclick="ANIM.modalOut('nav-menu')"><i class="fa fa-times"></i></button>
             </div>
         </div>
-                    <div>
+        <div>
     <div class='section-container container-padding'>
         <header class="section-header post-box">
             <h1>Trucos de expresiones reguales en php</h1>
@@ -82,7 +58,7 @@ if ( preg_match_all($needle, $haysack, $matches, PREG_SET_ORDER) ) {
         </div>
     </div>
 </div>
-            <div>
+        <div>
             <div class="section-container container-padding">
                 <hr>
                         <div class="social-buttons-bar">
@@ -99,6 +75,6 @@ if ( preg_match_all($needle, $haysack, $matches, PREG_SET_ORDER) ) {
                 </div>
             </div>
         </div>
-    </body>
-    </html>
+</body>
+</html>
     
